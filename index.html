@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blinkit Strategic Roadmap — Evolving Leadership in the Q-Commerce Era</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#12151B;
+    --ink-2:#1C202A;
+    --paper:#F7F7F3;
+    --paper-dim:#EDECE4;
+    --white:#FFFFFF;
+    --amber:#E8960C;
+    --amber-deep:#B8730A;
+    --amber-soft:#FBEED2;
+    --teal:#1C6E5E;
+    --teal-soft:#DFEEE9;
+    --steel:#3C5A8A;
+    --steel-soft:#E3E8F2;
+    --coral:#B23A2E;
+    --coral-soft:#F6E1DE;
+    --text:#1B1F27;
+    --text-muted:#5B6270;
+    --text-faint:#8A8F99;
+    --rule:#DEDCD2;
+    --rule-dark:#33384A;
+
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:'IBM Plex Mono', 'Courier New', monospace;
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background:var(--ink);
+    font-family:var(--font-body);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{ background:var(--amber); color:var(--ink); }
+
+  .doc{
+    max-width:900px;
+    margin:0 auto;
+    padding:48px 0 96px;
+  }
+
+  /* ===== PAGE SHELL ===== */
+  .page{
+    background:var(--paper);
+    color:var(--text);
+    margin-bottom:28px;
+    border-radius:3px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.03);
+    position:relative;
+    overflow:hidden;
+  }
+  .page-frame{
+    padding:52px 58px 40px;
+    min-height:900px;
+    display:flex;
+    flex-direction:column;
+  }
+  .page-kicker{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    font-family:var(--font-mono);
+    font-size:11px;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--text-faint);
+    border-bottom:1px solid var(--rule);
+    padding-bottom:14px;
+    margin-bottom:28px;
+  }
+  .page-kicker .eyebrow{ color:var(--amber-deep); font-weight:600; }
+  .page-kicker .pillar-tag{ color:var(--text-faint); }
+  .page-title{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:34px;
+    line-height:1.15;
+    letter-spacing:-0.01em;
+    margin:0 0 8px;
+    color:var(--ink);
+    max-width:640px;
+  }
+  .page-subtitle{
+    font-family:var(--font-body);
+    font-size:15px;
+    color:var(--text-muted);
+    max-width:600px;
+    margin:0 0 30px;
+    line-height:1.55;
+  }
+  .rule-amber{
+    width:56px; height:3px; background:var(--amber);
+    margin:0 0 30px;
+  }
+  .page-body{ flex:1; }
+  .page-footer{
+    margin-top:auto;
+    padding-top:18px;
+    border-top:1px solid var(--rule);
+    display:flex;
+    justify-content:space-between;
+    font-family:var(--font-mono);
+    font-size:9.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--text-faint);
+  }
+
+  /* ===== TYPOGRAPHY ===== */
+  h3.block-title{
+    font-family:var(--font-display);
+    font-size:19px;
+    font-weight:600;
+    color:var(--ink);
+    margin:0 0 10px;
+    letter-spacing:-0.005em;
+  }
+  p{ line-height:1.68; font-size:14px; color:var(--text); margin:0 0 14px; }
+  p.lede{ font-size:15.5px; line-height:1.7; color:var(--text); }
+  .col p:last-child{ margin-bottom:0; }
+  strong{ color:var(--ink); font-weight:600; }
+  .muted{ color:var(--text-muted); }
+  .small{ font-size:12.5px; }
+  .eyebrow-mini{
+    font-family:var(--font-mono);
+    font-size:10px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--amber-deep);
+    font-weight:600;
+    display:block;
+    margin-bottom:6px;
+  }
+
+  /* ===== LAYOUT GRIDS ===== */
+  .grid-2{ display:grid; grid-template-columns:1.5fr 1fr; gap:36px; }
+  .grid-2-even{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .grid-4{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  .grid-5{ display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
+
+  /* ===== KPI CARDS ===== */
+  .kpi-card{
+    background:var(--white);
+    border:1px solid var(--rule);
+    border-top:3px solid var(--amber);
+    border-radius:2px;
+    padding:16px 14px;
+  }
+  .kpi-card .kpi-label{
+    font-family:var(--font-mono);
+    font-size:9.5px;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--text-muted);
+    display:block;
+    margin-bottom:8px;
+    line-height:1.4;
+  }
+  .kpi-card .kpi-value{
+    font-family:var(--font-display);
+    font-size:26px;
+    font-weight:600;
+    color:var(--ink);
+    line-height:1;
+    display:block;
+  }
+  .kpi-card .kpi-delta{
+    font-family:var(--font-mono);
+    font-size:10.5px;
+    color:var(--teal);
+    margin-top:6px;
+    display:block;
+  }
+  .kpi-card .kpi-delta.flat{ color:var(--text-faint); }
+  .kpi-card.teal{ border-top-color:var(--teal); }
+  .kpi-card.steel{ border-top-color:var(--steel); }
+
+  /* ===== CALLOUT BOXES ===== */
+  .callout{
+    background:var(--amber-soft);
+    border-left:3px solid var(--amber);
+    padding:16px 18px;
+    border-radius:0 2px 2px 0;
+    margin:20px 0;
+  }
+  .callout.teal{ background:var(--teal-soft); border-left-color:var(--teal); }
+  .callout.steel{ background:var(--steel-soft); border-left-color:var(--steel); }
+  .callout.coral{ background:var(--coral-soft); border-left-color:var(--coral); }
+  .callout .callout-label{
+    font-family:var(--font-mono);
+    font-size:10px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    font-weight:600;
+    display:block;
+    margin-bottom:6px;
+  }
+  .callout.amber .callout-label, .callout .callout-label{ color:var(--amber-deep); }
+  .callout.teal .callout-label{ color:var(--teal); }
+  .callout.steel .callout-label{ color:var(--steel); }
+  .callout.coral .callout-label{ color:var(--coral); }
+  .callout p{ font-size:13.5px; margin:0; color:var(--ink); line-height:1.6; }
+
+  /* ===== TABLES ===== */
+  table.report-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:12.5px;
+  }
+  table.report-table th{
+    font-family:var(--font-mono);
+    font-size:10px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    text-align:left;
+    color:var(--text-muted);
+    padding:8px 10px;
+    border-bottom:2px solid var(--ink);
+    font-weight:600;
+  }
+  table.report-table td{
+    padding:9px 10px;
+    border-bottom:1px solid var(--rule);
+    color:var(--text);
+    vertical-align:top;
+  }
+  table.report-table tr:nth-child(even) td{ background:rgba(0,0,0,0.015); }
+  table.report-table td.num, table.report-table th.num{ font-family:var(--font-mono); text-align:right; }
+
+  /* ===== DEVICE MOCKUPS ===== */
+  .mockup-wrap{
+    background:var(--ink);
+    border-radius:8px;
+    padding:22px;
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  .phone{
+    width:172px;
+    background:#fff;
+    border-radius:18px;
+    border:5px solid var(--ink-2);
+    overflow:hidden;
+    box-shadow:0 12px 24px rgba(0,0,0,0.4);
+    font-family:var(--font-body);
+  }
+  .phone .status-bar{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:6px 10px 2px; font-family:var(--font-mono); font-size:8px; color:var(--ink);
+  }
+  .phone .screen-label{
+    font-family:var(--font-mono); font-size:7.5px; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--text-faint); text-align:center; padding:2px 0 6px;
+  }
+  .browser{
+    width:100%;
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 12px 24px rgba(0,0,0,0.4);
+  }
+  .browser .browser-bar{
+    background:#E7E5DC; padding:8px 12px; display:flex; align-items:center; gap:6px;
+  }
+  .browser .dot{ width:7px; height:7px; border-radius:50%; background:#c9c6ba; }
+  .browser .browser-url{
+    margin-left:8px; background:#fff; border-radius:4px; padding:3px 10px;
+    font-family:var(--font-mono); font-size:9px; color:var(--text-muted); flex:1;
+  }
+
+  /* ===== FOOTER / UTIL ===== */
+  .tag{
+    display:inline-block; font-family:var(--font-mono); font-size:9.5px; letter-spacing:0.06em;
+    text-transform:uppercase; padding:3px 8px; border-radius:20px; font-weight:600;
+  }
+  .tag.amber{ background:var(--amber-soft); color:var(--amber-deep); }
+  .tag.teal{ background:var(--teal-soft); color:var(--teal); }
+  .tag.steel{ background:var(--steel-soft); color:var(--steel); }
+  .tag.coral{ background:var(--coral-soft); color:var(--coral); }
+
+  ul.clean{ margin:0; padding:0; list-style:none; }
+  ul.clean li{
+    padding:9px 0 9px 18px; border-bottom:1px solid var(--rule); font-size:13px; line-height:1.55;
+    position:relative;
+  }
+  ul.clean li:last-child{ border-bottom:none; }
+  ul.clean li::before{
+    content:''; position:absolute; left:0; top:16px; width:6px; height:6px; background:var(--amber); border-radius:50%;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover{
+    background:var(--ink);
+    color:var(--paper);
+    min-height:960px;
+    padding:56px 64px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+  }
+  .cover::before{
+    content:'';
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(232,150,12,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(232,150,12,0.06) 1px, transparent 1px);
+    background-size:38px 38px;
+    -webkit-mask-image:linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+            mask-image:linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    pointer-events:none;
+  }
+  .cover-top{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    font-family:var(--font-mono); font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
+    color:#9AA0AE; border-bottom:1px solid var(--rule-dark); padding-bottom:20px; position:relative; z-index:1;
+  }
+  .cover-top .brandmark{ color:var(--amber); font-weight:600; }
+  .cover-mid{ flex:1; display:flex; flex-direction:column; justify-content:center; position:relative; z-index:1; padding:40px 0; }
+  .cover-mid .doctype{
+    font-family:var(--font-mono); font-size:12px; letter-spacing:0.16em; text-transform:uppercase;
+    color:var(--amber); margin-bottom:22px;
+  }
+  .cover-mid h1{
+    font-family:var(--font-display); font-weight:600; font-size:52px; line-height:1.08;
+    letter-spacing:-0.015em; margin:0 0 22px; max-width:720px; color:#fff;
+  }
+  .cover-mid h1 em{ font-style:italic; color:var(--amber); font-weight:500; }
+  .cover-mid .cover-dek{
+    font-family:var(--font-body); font-size:16px; line-height:1.6; color:#B7BBC6; max-width:560px; margin:0;
+  }
+  .cover-bottom{
+    position:relative; z-index:1; display:flex; justify-content:space-between; align-items:flex-end;
+    border-top:1px solid var(--rule-dark); padding-top:22px; margin-top:24px;
+  }
+  .cover-bottom .meta-block{ font-family:var(--font-mono); font-size:11px; color:#9AA0AE; line-height:1.8; }
+  .cover-bottom .meta-block b{ color:#fff; font-weight:600; }
+  .cover-bottom .pillars-preview{ display:flex; gap:22px; }
+  .cover-bottom .pillars-preview div{ font-family:var(--font-mono); font-size:10px; color:#9AA0AE; text-align:right; }
+  .cover-bottom .pillars-preview div span{ display:block; color:#fff; font-size:11px; margin-top:2px; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:720px){
+    .doc{ padding:20px 12px 60px; }
+    .page-frame{ padding:32px 22px 26px; }
+    .grid-2{ grid-template-columns:1fr; }
+    .grid-3, .grid-4, .grid-5{ grid-template-columns:repeat(2,1fr); }
+    .cover{ padding:32px 26px; }
+    .cover-mid h1{ font-size:34px; }
+    .cover-bottom{ flex-direction:column; gap:16px; align-items:flex-start; }
+  }
+
+  /* ===== PRINT / SAVE-AS-PDF ===== */
+  @media print{
+    /* Force all backgrounds and colors to render in PDF */
+    *,
+    *::before,
+    *::after{
+      -webkit-print-color-adjust:exact !important;
+      print-color-adjust:exact !important;
+      color-adjust:exact !important;
+    }
+
+    @page{
+      size:A4 portrait;
+      margin:0;
+    }
+
+    html, body{
+      margin:0; padding:0;
+      background:#fff !important;
+      width:210mm;
+    }
+
+    .doc{
+      max-width:none;
+      padding:0;
+      margin:0;
+    }
+
+    .page{
+      box-shadow:none !important;
+      border-radius:0 !important;
+      margin:0 !important;
+      width:210mm;
+      min-height:297mm;
+      page-break-after:always;
+      page-break-inside:avoid;
+      overflow:hidden;
+      position:relative;
+    }
+    .page:last-child{
+      page-break-after:auto;
+    }
+
+    .page-frame{
+      padding:16mm 18mm 14mm !important;
+      min-height:297mm;
+      box-sizing:border-box;
+    }
+
+    .cover{
+      min-height:297mm;
+      padding:16mm 18mm !important;
+      box-sizing:border-box;
+    }
+
+    /* Prevent content from splitting across pages */
+    .callout,
+    .kpi-card,
+    .mockup-wrap,
+    table.report-table,
+    svg,
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5{
+      page-break-inside:avoid;
+    }
+
+    /* Ensure SVGs scale within print bounds */
+    svg{
+      max-width:100% !important;
+      height:auto !important;
+    }
+
+    /* Hide browser-added link decorations */
+    a, a:visited{
+      text-decoration:none !important;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="doc">
+
+  <!-- ============ PAGE 1 — COVER + EXEC SUMMARY ============ -->
+  <section class="page" id="page-1">
+    <div class="cover">
+      <div class="cover-top">
+        <span class="brandmark">● STRATEGIC ROADMAP</span>
+        <span>Prepared for Blinkit (Eternal Ltd.) Leadership &amp; Hiring Committee</span>
+      </div>
+      <div class="cover-mid">
+        <div class="doctype">Strategic Product &amp; Business Roadmap · FY27–FY28</div>
+        <h1>Evolving Blinkit's Leadership <em>in the Q-Commerce Era</em></h1>
+        <p class="cover-dek">From India's fastest delivery app to its default commerce operating system — a product-led plan for monetization precision, structural Tier-2/3 reach, and operational trust, grounded in Blinkit's Q1 FY27 inflection to profitability.</p>
+      </div>
+      <div class="cover-bottom">
+        <div class="meta-block">
+          <div>Prepared by <b>Anubhav</b> — Product Manager Candidate</div>
+          <div>Date: <b>August 5, 2026</b> &nbsp;·&nbsp; Status: <b>Confidential Draft</b></div>
+        </div>
+        <div class="pillars-preview">
+          <div>Pillar 01<span>Monetization</span></div>
+          <div>Pillar 02<span>Structural Reach</span></div>
+          <div>Pillar 03<span>Operational Trust</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 2 — EXEC SUMMARY + KPI DASHBOARD ============ -->
+  <section class="page" id="page-2">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow">01 · Executive Summary</span>
+        <span class="pillar-tag">Page 01 / 08</span>
+      </div>
+      <h2 class="page-title">The State of the Quick-Commerce Union</h2>
+      <p class="page-subtitle">Blinkit enters FY27 no longer proving the quick-commerce model works — it's proving what a profitable, India-scale version of it looks like.</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <div class="grid-2">
+          <div class="col">
+            <p class="lede">Blinkit holds an estimated <strong>46–50% share</strong> of India's quick-commerce order value, roughly double its nearest rival, on a network that crossed <strong>2,443 dark stores</strong> at the end of Q1 FY27 — up 200 net-new stores in a single quarter — with a public line of sight to 3,000 by March 2027. The business has completed its transition from a commission marketplace to a high-margin, inventory-led model, with the large majority of Net Order Value now fulfilled through owned inventory rather than third-party listings.</p>
+            <p>What changed this year is the P&amp;L. Net Order Value grew <strong>86% year-on-year to ₹17,132 crore</strong> in the quarter ended June 2026, and the quick-commerce segment posted a fifth consecutive quarter of adjusted-EBITDA improvement. Parent Eternal's own center of gravity has shifted with it: Blinkit is now the group's largest revenue engine, and in February 2026 co-founder Albinder Dhindsa was elevated to Group CEO of Eternal — the clearest possible signal that quick commerce, not food delivery, now sets the company's strategic agenda.</p>
+            <p>Profitability at this stage is an inflection, not a destination. Store-level economics still carry real fragility — a ₹2.5 crore capex load per store, a 12-day working-capital cycle, and a company-guided 40% steady-state ROCE target that has not yet been proven at scale outside dense metro clusters. The next phase of growth has to be earned in three places at once: extracting more margin from advertising without degrading the shopping experience, making Tier-2/3 expansion actually pay for itself, and keeping the human and regulatory foundation of the business — riders, kiranas, and city governments — from becoming a brake on growth.</p>
+            <p>This roadmap treats those three problems as one strategy, not three initiatives. It proposes a shift in how Blinkit talks about itself internally: from a <strong>delivery app measured on minutes</strong>, to a <strong>unified commerce operating system measured on trust, density, and margin per order</strong>.</p>
+          </div>
+          <div class="col">
+            <div class="callout amber">
+              <span class="callout-label">Thesis</span>
+              <p>The 10-minute promise got Blinkit to leadership. It won't be what defends it — reliability, assortment depth, and monetization precision will.</p>
+            </div>
+            <div class="callout steel">
+              <span class="callout-label">Scope of this document</span>
+              <p>Eight sections covering monetization, Tier-2/3 economics, AI-driven operations, social sustainability, prioritization (RICE), and a quarterly execution roadmap.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="block-title" style="margin-top:8px;">Where Blinkit Stands — Q1 FY27 Snapshot</h3>
+        <div class="grid-5">
+          <div class="kpi-card">
+            <span class="kpi-label">Q-Commerce Market Share</span>
+            <span class="kpi-value">~48%</span>
+            <span class="kpi-delta">vs. ~40% in 2024</span>
+          </div>
+          <div class="kpi-card teal">
+            <span class="kpi-label">Net Order Value, Q1 FY27</span>
+            <span class="kpi-value">₹17,132cr</span>
+            <span class="kpi-delta">+86% YoY</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">Dark Stores</span>
+            <span class="kpi-value">2,443</span>
+            <span class="kpi-delta">Target: 3,000 by Mar '27</span>
+          </div>
+          <div class="kpi-card teal">
+            <span class="kpi-label">Adj. EBITDA, Q1 FY27</span>
+            <span class="kpi-value">₹100cr+</span>
+            <span class="kpi-delta">5th straight quarter of gains</span>
+          </div>
+          <div class="kpi-card steel">
+            <span class="kpi-label">Ad Revenue Growth</span>
+            <span class="kpi-value">220%</span>
+            <span class="kpi-delta flat">YoY, outpacing GMV growth</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Blinkit Strategic Roadmap — Confidential Draft</span>
+        <span>Prepared by Anubhav · Aug 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE — STRATEGY HOUSE ============ -->
+  <section class="page" id="page-strategy-house">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow">02 · Strategic Architecture</span>
+        <span class="pillar-tag">Page 02 / 08</span>
+      </div>
+      <h2 class="page-title">The Strategy House</h2>
+      <p class="page-subtitle">Three initiatives-heavy sections of the original brief collapse into one structural logic: a single North Star, three load-bearing pillars, and one foundation that all three stand on.</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <p>Blinkit's roadmap risk isn't a shortage of good ideas — the org has ad-tech ideas, expansion ideas, and ops ideas in flight simultaneously. The risk is running them as parallel initiatives that compete for the same dark-store operations bandwidth without a shared thesis. The house below is a forcing function: every initiative in this document has to sit under one of three pillars, and every pillar has to rest on the same infrastructure foundation, or it doesn't belong on the roadmap.</p>
+
+        <svg viewBox="0 0 900 500" style="width:100%; height:auto; margin:18px 0 8px;" xmlns="http://www.w3.org/2000/svg">
+          <!-- North Star callout -->
+          <rect x="195" y="0" width="510" height="58" rx="4" fill="var(--ink)"></rect>
+          <text x="450" y="17" text-anchor="middle" font-family="var(--font-mono)" font-size="9" letter-spacing="1.5" fill="var(--amber)">NORTH STAR</text>
+          <text x="450" y="35" text-anchor="middle" font-family="var(--font-display)" font-size="14.5" fill="#fff" font-weight="600">Become India's default commerce operating system —</text>
+          <text x="450" y="51" text-anchor="middle" font-family="var(--font-display)" font-size="14.5" fill="#fff" font-weight="600">not just its fastest delivery app.</text>
+
+          <!-- leader to apex -->
+          <line x1="450" y1="58" x2="450" y2="80" stroke="var(--ink)" stroke-width="1.5"></line>
+          <circle cx="450" cy="80" r="4" fill="var(--amber)"></circle>
+
+          <!-- roofline -->
+          <line x1="450" y1="80" x2="100" y2="150" stroke="var(--ink)" stroke-width="1.5"></line>
+          <line x1="450" y1="80" x2="800" y2="150" stroke="var(--ink)" stroke-width="1.5"></line>
+          <circle cx="100" cy="150" r="3" fill="var(--ink)"></circle>
+          <circle cx="800" cy="150" r="3" fill="var(--ink)"></circle>
+          <line x1="100" y1="150" x2="800" y2="150" stroke="var(--ink)" stroke-width="1" stroke-dasharray="1,4" opacity="0.5"></line>
+
+          <!-- dimension line -->
+          <line x1="70" y1="170" x2="70" y2="400" stroke="var(--text-faint)" stroke-width="1"></line>
+          <line x1="63" y1="170" x2="77" y2="170" stroke="var(--text-faint)" stroke-width="1"></line>
+          <line x1="63" y1="400" x2="77" y2="400" stroke="var(--text-faint)" stroke-width="1"></line>
+          <text x="52" y="290" text-anchor="middle" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" transform="rotate(-90 52 290)" letter-spacing="1">STRATEGIC PILLARS</text>
+
+          <!-- corner brackets -->
+          <path d="M100,170 L100,158 L112,158" fill="none" stroke="var(--amber)" stroke-width="2"></path>
+          <path d="M800,170 L800,158 L788,158" fill="none" stroke="var(--amber)" stroke-width="2"></path>
+          <path d="M100,400 L100,412 L112,412" fill="none" stroke="var(--amber)" stroke-width="2"></path>
+          <path d="M800,400 L800,412 L788,412" fill="none" stroke="var(--amber)" stroke-width="2"></path>
+
+          <!-- Pillar 1 -->
+          <rect x="100" y="170" width="212" height="230" fill="var(--white)" stroke="var(--rule)"></rect>
+          <rect x="100" y="170" width="212" height="6" fill="var(--amber)"></rect>
+          <foreignObject x="112" y="188" width="188" height="200">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:var(--font-body); color:var(--text);">
+              <div style="font-family:var(--font-mono); font-size:9.5px; letter-spacing:0.08em; color:var(--amber-deep); font-weight:600; margin-bottom:6px;">PILLAR 01</div>
+              <div style="font-family:var(--font-display); font-size:16px; font-weight:600; color:var(--ink); margin-bottom:8px; line-height:1.2;">Monetization Precision</div>
+              <div style="font-size:11.5px; line-height:1.5; color:var(--text-muted); margin-bottom:10px;">Turn 220% ad-revenue growth into durable margin — bid on intent, not impressions.</div>
+              <div style="font-size:10px; font-family:var(--font-mono); color:var(--text-faint); line-height:1.7;">→ Predictive Bidding<br>→ Brand Fidelity<br>→ Bundle Bidding</div>
+            </div>
+          </foreignObject>
+
+          <!-- Pillar 2 -->
+          <rect x="344" y="170" width="212" height="230" fill="var(--white)" stroke="var(--rule)"></rect>
+          <rect x="344" y="170" width="212" height="6" fill="var(--teal)"></rect>
+          <foreignObject x="356" y="188" width="188" height="200">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:var(--font-body); color:var(--text);">
+              <div style="font-family:var(--font-mono); font-size:9.5px; letter-spacing:0.08em; color:var(--teal); font-weight:600; margin-bottom:6px;">PILLAR 02</div>
+              <div style="font-family:var(--font-display); font-size:16px; font-weight:600; color:var(--ink); margin-bottom:8px; line-height:1.2;">Structural Reach</div>
+              <div style="font-size:11.5px; line-height:1.5; color:var(--text-muted); margin-bottom:10px;">Make Tier-2/3 expansion pay for itself instead of diluting metro unit economics.</div>
+              <div style="font-size:10px; font-family:var(--font-mono); color:var(--text-faint); line-height:1.7;">→ Green Delivery<br>→ Level-System Gating<br>→ Kirana Hybrid</div>
+            </div>
+          </foreignObject>
+
+          <!-- Pillar 3 -->
+          <rect x="588" y="170" width="212" height="230" fill="var(--white)" stroke="var(--rule)"></rect>
+          <rect x="588" y="170" width="212" height="6" fill="var(--steel)"></rect>
+          <foreignObject x="600" y="188" width="188" height="200">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:var(--font-body); color:var(--text);">
+              <div style="font-family:var(--font-mono); font-size:9.5px; letter-spacing:0.08em; color:var(--steel); font-weight:600; margin-bottom:6px;">PILLAR 03</div>
+              <div style="font-family:var(--font-display); font-size:16px; font-weight:600; color:var(--ink); margin-bottom:8px; line-height:1.2;">Operational Trust</div>
+              <div style="font-size:11.5px; line-height:1.5; color:var(--text-muted); margin-bottom:10px;">Protect the human and forecasting systems that make the 10-minute promise credible.</div>
+              <div style="font-size:10px; font-family:var(--font-mono); color:var(--text-faint); line-height:1.7;">→ Demand Sensing<br>→ Proactive Support<br>→ Rider Welfare</div>
+            </div>
+          </foreignObject>
+
+          <!-- Foundation -->
+          <rect x="100" y="430" width="700" height="50" rx="2" fill="var(--ink)"></rect>
+          <foreignObject x="100" y="430" width="700" height="50">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; font-family:var(--font-mono); color:#fff;">
+              <div style="font-size:10.5px; letter-spacing:0.1em; font-weight:600;">DATA &amp; DARK-STORE INFRASTRUCTURE</div>
+              <div style="font-size:9.5px; color:#9AA0AE; margin-top:3px;">2,443 stores · 150+ cities · ~90% of NOV via owned inventory</div>
+            </div>
+          </foreignObject>
+
+          <!-- footing hatch -->
+          <g stroke="var(--rule)" stroke-width="1" opacity="0.7">
+            <line x1="100" y1="490" x2="112" y2="480"></line>
+            <line x1="130" y1="490" x2="142" y2="480"></line>
+            <line x1="160" y1="490" x2="172" y2="480"></line>
+            <line x1="190" y1="490" x2="202" y2="480"></line>
+            <line x1="220" y1="490" x2="232" y2="480"></line>
+            <line x1="250" y1="490" x2="262" y2="480"></line>
+            <line x1="280" y1="490" x2="292" y2="480"></line>
+            <line x1="310" y1="490" x2="322" y2="480"></line>
+            <line x1="340" y1="490" x2="352" y2="480"></line>
+            <line x1="370" y1="490" x2="382" y2="480"></line>
+            <line x1="400" y1="490" x2="412" y2="480"></line>
+            <line x1="430" y1="490" x2="442" y2="480"></line>
+            <line x1="460" y1="490" x2="472" y2="480"></line>
+            <line x1="490" y1="490" x2="502" y2="480"></line>
+            <line x1="520" y1="490" x2="532" y2="480"></line>
+            <line x1="550" y1="490" x2="562" y2="480"></line>
+            <line x1="580" y1="490" x2="592" y2="480"></line>
+            <line x1="610" y1="490" x2="622" y2="480"></line>
+            <line x1="640" y1="490" x2="652" y2="480"></line>
+            <line x1="670" y1="490" x2="682" y2="480"></line>
+            <line x1="700" y1="490" x2="712" y2="480"></line>
+            <line x1="730" y1="490" x2="742" y2="480"></line>
+            <line x1="760" y1="490" x2="772" y2="480"></line>
+            <line x1="790" y1="490" x2="800" y2="480"></line>
+          </g>
+        </svg>
+
+        <div class="callout amber" style="margin-top:20px;">
+          <span class="callout-label">Reading the house</span>
+          <p>A rule, not a slogan: nothing on this roadmap gets built unless it visibly reinforces one of the three pillars — and every pillar depends on dark-store density and clean data holding steady beneath it.</p>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Blinkit Strategic Roadmap — Confidential Draft</span>
+        <span>Prepared by Anubhav · Aug 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE — MARKET POSITIONING ============ -->
+  <section class="page" id="page-market">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow">02 · Strategic Architecture</span>
+        <span class="pillar-tag">Page 03 / 08</span>
+      </div>
+      <h2 class="page-title">Market Positioning &amp; Competitive Landscape</h2>
+      <p class="page-subtitle">Six players, one genuinely defensible lead — but the fight is bifurcating into a metro-density race and a Tier-2/3 reach race at the same time.</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <div class="grid-2">
+          <div class="col">
+            <p>The quick-commerce field has consolidated to six real players. Blinkit holds an estimated 46–50% of order value, with Swiggy Instamart (~24%) and Zepto (~22%) as the only competitors with comparable dark-store density. Amazon Now and Flipkart Minutes have both scaled past 500 dark stores in under two years, and BigBasket's BB Now trades share for reach, riding Tata's sourcing network into cities the pure-plays haven't reached yet.</p>
+            <p>Positioning both by <strong>inventory model</strong> (owned vs. marketplace) and <strong>geographic depth</strong> (metro vs. Tier-2/3) shows why Blinkit's lead is real but not permanent: it's the only player scaled in the top-right "owned inventory + Tier-2/3 reach" quadrant, but Instamart and Zepto are both dense enough to contest metros directly, and the hybrids are the ones actually testing Tier-2/3 economics from a different angle — lower capex, lower control.</p>
+          </div>
+          <div class="callout steel">
+            <span class="callout-label">Signal to watch</span>
+            <p>Albinder Dhindsa's move to Group CEO of Eternal in Feb 2026 — with Deepinder Goyal shifting to non-executive Vice Chairman — makes Blinkit's operating logic the operating logic for the whole company. Expect capital and org priority to keep flowing here first.</p>
+          </div>
+        </div>
+
+        <svg viewBox="0 0 700 480" style="width:100%; height:auto; margin:8px 0 4px;" xmlns="http://www.w3.org/2000/svg">
+          <rect x="60" y="30" width="600" height="380" fill="none" stroke="var(--rule)"></rect>
+          <line x1="360" y1="30" x2="360" y2="410" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+          <line x1="60" y1="220" x2="660" y2="220" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+
+          <text x="70" y="46" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" letter-spacing="0.5">DENSE METRO SPECIALISTS</text>
+          <text x="650" y="46" text-anchor="end" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" letter-spacing="0.5">SCALE LEADERS</text>
+          <text x="70" y="400" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" letter-spacing="0.5">EMERGING ENTRANTS</text>
+          <text x="650" y="400" text-anchor="end" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" letter-spacing="0.5">HYBRID CHALLENGERS</text>
+
+          <!-- bubbles: competitors -->
+          <circle cx="410" cy="140" r="42" fill="var(--ink)" opacity="0.82"></circle>
+          <text x="410" y="136" text-anchor="middle" font-family="var(--font-body)" font-size="11" fill="#fff" font-weight="600">Instamart</text>
+          <text x="410" y="150" text-anchor="middle" font-family="var(--font-mono)" font-size="9.5" fill="#D8DAE0">~24%</text>
+
+          <circle cx="280" cy="120" r="40" fill="var(--ink)" opacity="0.82"></circle>
+          <text x="280" y="116" text-anchor="middle" font-family="var(--font-body)" font-size="11" fill="#fff" font-weight="600">Zepto</text>
+          <text x="280" y="130" text-anchor="middle" font-family="var(--font-mono)" font-size="9.5" fill="#D8DAE0">~22%</text>
+
+          <circle cx="460" cy="320" r="24" fill="var(--ink)" opacity="0.65"></circle>
+          <text x="460" y="317" text-anchor="middle" font-family="var(--font-body)" font-size="9.5" fill="#fff" font-weight="600">BB Now</text>
+          <text x="460" y="329" text-anchor="middle" font-family="var(--font-mono)" font-size="8" fill="#D8DAE0">~5%</text>
+
+          <circle cx="205" cy="300" r="15" fill="var(--ink)" opacity="0.55"></circle>
+          <text x="205" y="325" text-anchor="middle" font-family="var(--font-body)" font-size="9" fill="var(--text-muted)">Amazon Now</text>
+
+          <circle cx="165" cy="345" r="14" fill="var(--ink)" opacity="0.55"></circle>
+          <text x="165" y="368" text-anchor="middle" font-family="var(--font-body)" font-size="9" fill="var(--text-muted)">Flipkart Minutes</text>
+
+          <!-- Blinkit — hero bubble -->
+          <circle cx="505" cy="95" r="60" fill="var(--amber)"></circle>
+          <text x="505" y="90" text-anchor="middle" font-family="var(--font-display)" font-size="16" fill="var(--ink)" font-weight="700">Blinkit</text>
+          <text x="505" y="107" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink)" font-weight="600">~48%</text>
+
+          <text x="360" y="432" text-anchor="middle" font-family="var(--font-mono)" font-size="9.5" fill="var(--text-muted)" letter-spacing="0.5">GEOGRAPHIC REACH — Metro-Concentrated → Tier 2/3 Depth →</text>
+          <text x="30" y="220" text-anchor="middle" font-family="var(--font-mono)" font-size="9.5" fill="var(--text-muted)" letter-spacing="0.5" transform="rotate(-90 30 220)">INVENTORY MODEL — Marketplace ↑ Owned</text>
+        </svg>
+        <p class="small muted" style="text-align:center; margin-top:0;">Bubble size ≈ estimated order-value share. Positioning reflects strategic judgment based on public store-count and inventory-model disclosures, not a disclosed metric.</p>
+
+        <table class="report-table" style="margin-top:18px;">
+          <thead>
+            <tr>
+              <th>Player</th>
+              <th class="num">Est. Share</th>
+              <th class="num">Dark Stores</th>
+              <th>Model</th>
+              <th>Key Vulnerability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Blinkit</strong></td>
+              <td class="num">46–50%</td>
+              <td class="num">2,443</td>
+              <td>Owned inventory, inventory-led</td>
+              <td>Tier-2/3 AOV dilution; regulatory scrutiny of "10-min" claims</td>
+            </tr>
+            <tr>
+              <td>Swiggy Instamart</td>
+              <td class="num">~24%</td>
+              <td class="num">1,100+</td>
+              <td>Owned inventory, metro-dense</td>
+              <td>Cross-subsidized by food-delivery cash flows</td>
+            </tr>
+            <tr>
+              <td>Zepto</td>
+              <td class="num">~22%</td>
+              <td class="num">300+</td>
+              <td>Owned inventory, ultra-dense urban</td>
+              <td>Narrower city footprint than the two leaders</td>
+            </tr>
+            <tr>
+              <td>Amazon Now</td>
+              <td class="num">Emerging</td>
+              <td class="num">500+</td>
+              <td>Hybrid, marketplace-backed</td>
+              <td>Late entrant; unproven dark-store discipline</td>
+            </tr>
+            <tr>
+              <td>Flipkart Minutes</td>
+              <td class="num">Emerging</td>
+              <td class="num">500+</td>
+              <td>Hybrid, marketplace-backed</td>
+              <td>Same late-entrant risk as Amazon Now</td>
+            </tr>
+            <tr>
+              <td>BigBasket (BB Now)</td>
+              <td class="num">5–7%</td>
+              <td class="num">Undisclosed</td>
+              <td>Hybrid, Tata-sourced</td>
+              <td>Slower delivery promise than pure-plays</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="page-footer">
+        <span>Blinkit Strategic Roadmap — Confidential Draft</span>
+        <span>Prepared by Anubhav · Aug 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE — REVENUE MODEL / AD-TECH ============ -->
+  <section class="page" id="page-adtech">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow pillar-01">03 · Pillar 01 — Monetization Precision</span>
+        <span class="pillar-tag">Page 04 / 08</span>
+      </div>
+      <h2 class="page-title">Beyond Delivery Fees: Brand Central 2.0</h2>
+      <p class="page-subtitle">Ad revenue is already growing faster than GMV. The job now is precision — shifting the objective from "Top of Mind" to "Top of Cart."</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <div class="grid-2">
+          <div class="col">
+            <p><strong>Predictive Bidding Engine.</strong> Search behavior is sharply time-boxed — breakfast-adjacent queries peak 6–9am, snacks 5–7pm. A session-based, dayparted bidding layer lets brands pay a premium specifically for these "Intent Windows" instead of flat all-day placements, which should lift realized ROAS without raising the total ad load a shopper sees.</p>
+            <p><strong>Brand Fidelity (the anti-"Swap and Save").</strong> Zepto's Swap and Save actively re-routes shoppers to cheaper alternatives at the cart stage — a direct tax on incumbent FMCG budgets. Blinkit should sell the inverse: a "Brand Fidelity" placement that lets category leaders bid for protection from substitution prompts, monetizing the thing competitors are currently attacking for free.</p>
+            <p><strong>Bundle Bidding.</strong> Curated "Solution Bundles" (a Sunday Brunch bundle of milk, bread, and jam) let brands bid to be the pre-selected default within a bundle slot — a higher-intent, higher-CPM unit than a standalone search ad, borrowed from bundle-monetization patterns that already work in other curated marketplaces.</p>
+          </div>
+          <div class="callout amber">
+            <span class="callout-label">Why this pillar first</span>
+            <p>Ad revenue grew 220% YoY — nearly 3x GMV growth. That gap is the single highest-margin lever on this entire roadmap, and none of it requires new capex.</p>
+          </div>
+        </div>
+
+        <h3 class="block-title" style="margin-top:6px;">Mockup — Bundle Bidding Engine (Brand-Side Console)</h3>
+        <div class="mockup-wrap">
+          <div class="browser" style="max-width:620px;">
+            <div class="browser-bar">
+              <span class="dot" style="background:#E5605A;"></span><span class="dot" style="background:#E8B13A;"></span><span class="dot" style="background:#5CB85C;"></span>
+              <div class="browser-url">brandcentral.blinkit.com/bundles/sunday-brunch</div>
+            </div>
+            <div style="padding:18px 22px 22px;">
+              <div style="font-family:var(--font-mono); font-size:9px; letter-spacing:0.08em; color:var(--amber-deep); font-weight:600; margin-bottom:4px;">BRAND CENTRAL 2.0 · BUNDLE BIDDING</div>
+              <div style="font-family:var(--font-display); font-size:18px; font-weight:600; color:var(--ink); margin-bottom:14px;">"Sunday Brunch" Solution Bundle</div>
+              <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px;">
+                <div style="border:1px solid var(--rule); border-radius:6px; padding:10px;">
+                  <div style="font-size:9.5px; font-family:var(--font-mono); color:var(--text-faint); text-transform:uppercase; margin-bottom:6px;">Slot · Milk</div>
+                  <div style="font-size:12px; font-weight:600; color:var(--ink); margin-bottom:8px;">Leading: FreshDairy Co.</div>
+                  <div style="height:5px; background:var(--paper-dim); border-radius:3px; margin-bottom:6px;"><div style="width:72%; height:100%; background:var(--amber); border-radius:3px;"></div></div>
+                  <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-muted);">Bid: ₹4.20 / 1k</div>
+                </div>
+                <div style="border:1px solid var(--amber); border-radius:6px; padding:10px; background:var(--amber-soft);">
+                  <div style="font-size:9.5px; font-family:var(--font-mono); color:var(--amber-deep); text-transform:uppercase; margin-bottom:6px;">Slot · Bread · You</div>
+                  <div style="font-size:12px; font-weight:600; color:var(--ink); margin-bottom:8px;">Harvest Bakehouse</div>
+                  <div style="height:5px; background:#fff; border-radius:3px; margin-bottom:6px;"><div style="width:88%; height:100%; background:var(--amber-deep); border-radius:3px;"></div></div>
+                  <div style="font-family:var(--font-mono); font-size:10px; color:var(--amber-deep); font-weight:600;">Bid: ₹5.60 / 1k</div>
+                </div>
+                <div style="border:1px solid var(--rule); border-radius:6px; padding:10px;">
+                  <div style="font-size:9.5px; font-family:var(--font-mono); color:var(--text-faint); text-transform:uppercase; margin-bottom:6px;">Slot · Jam</div>
+                  <div style="font-size:12px; font-weight:600; color:var(--ink); margin-bottom:8px;">Leading: OrchardTable</div>
+                  <div style="height:5px; background:var(--paper-dim); border-radius:3px; margin-bottom:6px;"><div style="width:54%; height:100%; background:var(--amber); border-radius:3px;"></div></div>
+                  <div style="font-family:var(--font-mono); font-size:10px; color:var(--text-muted);">Bid: ₹3.10 / 1k</div>
+                </div>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px; padding-top:14px; border-top:1px solid var(--rule);">
+                <span style="font-family:var(--font-mono); font-size:10px; color:var(--text-muted); text-transform:uppercase;">Predicted incremental ROAS if bundle wins</span>
+                <span style="font-family:var(--font-display); font-size:20px; font-weight:700; color:var(--teal);">4.2×</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="block-title" style="margin-top:24px;">Illustrative Ad-Revenue Opportunity Sizing</h3>
+        <svg viewBox="0 0 700 380" style="width:100%; height:auto;" xmlns="http://www.w3.org/2000/svg">
+          <line x1="30" y1="340" x2="670" y2="340" stroke="var(--rule)"></line>
+          <!-- connectors -->
+          <line x1="135" y1="125.7" x2="175" y2="125.7" stroke="var(--text-faint)" stroke-dasharray="2,3"></line>
+          <line x1="265" y1="106.4" x2="305" y2="106.4" stroke="var(--text-faint)" stroke-dasharray="2,3"></line>
+          <line x1="395" y1="93.6" x2="435" y2="93.6" stroke="var(--text-faint)" stroke-dasharray="2,3"></line>
+          <line x1="525" y1="65.7" x2="565" y2="65.7" stroke="var(--text-faint)" stroke-dasharray="2,3"></line>
+
+          <!-- bar 1: current -->
+          <rect x="45" y="125.7" width="90" height="214.3" fill="#C9C7BC"></rect>
+          <text x="90" y="115" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--ink)" font-weight="600">100</text>
+          <!-- bar 2 -->
+          <rect x="175" y="106.4" width="90" height="19.3" fill="var(--amber)" opacity="0.75"></rect>
+          <text x="220" y="98" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink)" font-weight="600">+9</text>
+          <!-- bar 3 -->
+          <rect x="305" y="93.6" width="90" height="12.8" fill="var(--amber)" opacity="0.85"></rect>
+          <text x="350" y="86" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink)" font-weight="600">+6</text>
+          <!-- bar 4 -->
+          <rect x="435" y="65.7" width="90" height="27.9" fill="var(--amber)"></rect>
+          <text x="480" y="58" text-anchor="middle" font-family="var(--font-mono)" font-size="11" fill="var(--ink)" font-weight="600">+13</text>
+          <!-- bar 5: total -->
+          <rect x="565" y="65.7" width="90" height="274.3" fill="var(--ink)"></rect>
+          <text x="610" y="58" text-anchor="middle" font-family="var(--font-mono)" font-size="12" fill="var(--ink)" font-weight="700">128</text>
+
+          <text x="90" y="358" text-anchor="middle" font-family="var(--font-body)" font-size="10.5" fill="var(--text-muted)">Current<tspan x="90" dy="12">run-rate</tspan></text>
+          <text x="220" y="358" text-anchor="middle" font-family="var(--font-body)" font-size="10.5" fill="var(--text-muted)">Predictive<tspan x="220" dy="12">Bidding</tspan></text>
+          <text x="350" y="358" text-anchor="middle" font-family="var(--font-body)" font-size="10.5" fill="var(--text-muted)">Brand<tspan x="350" dy="12">Fidelity</tspan></text>
+          <text x="480" y="358" text-anchor="middle" font-family="var(--font-body)" font-size="10.5" fill="var(--text-muted)">Bundle<tspan x="480" dy="12">Bidding</tspan></text>
+          <text x="610" y="358" text-anchor="middle" font-family="var(--font-body)" font-size="10.5" fill="var(--ink)" font-weight="600">FY27<tspan x="610" dy="12">Potential</tspan></text>
+        </svg>
+        <p class="small muted" style="text-align:center; margin-top:2px;">Indexed to current ad-revenue run-rate = 100. Illustrative modeled uplift for prioritization purposes only — not disclosed company financials.</p>
+      </div>
+
+      <div class="page-footer">
+        <span>Blinkit Strategic Roadmap — Confidential Draft</span>
+        <span>Prepared by Anubhav · Aug 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE — TIER 2/3 EXPANSION ============ -->
+  <section class="page" id="page-tier2">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow">04 · Pillar 02 — Structural Reach</span>
+        <span class="pillar-tag">Page 05 / 08</span>
+      </div>
+      <h2 class="page-title">Solving the "Bharat" Problem</h2>
+      <p class="page-subtitle">Lower rent and lower labor costs cut the breakeven bar in smaller cities — but lower basket sizes can eat the saving entirely if the product doesn't adapt.</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <div class="grid-2">
+          <div class="col">
+            <p>Tier-2/3 expansion is a genuine paradox. A dark store in a smaller city needs roughly <strong>800 orders/day</strong> to break even, versus <strong>1,300 in a metro</strong> — real estate and labor cost less. But survey data consistently shows these users shopping for deals and value first, speed second, which means the average order looks nothing like a metro basket, and the store can hit its order count without hitting its revenue target.</p>
+            <p>The fix isn't to force metro UX onto a different customer — it's to sell a second product. A <strong>"Value-First" interface</strong>, with a <strong>Green Delivery</strong> tier (30–45 minutes, reduced or waived fee) lets Blinkit batch orders across a wider radius, cut last-mile cost per drop, and compete on price instead of speed in the cities where speed isn't the deciding factor.</p>
+            <p>SKU expansion should stay gated to the existing <strong>Level 1–4 system</strong>, not opened city-wide on a launch date. A store only earns access to higher-value inventory once it clears a 90% fill rate and a positive contribution margin at its current level — the gate protects working capital in exactly the stores that can least absorb a stockout write-off.</p>
+            <div style="display:flex; gap:8px; margin-top:16px; flex-wrap:wrap;">
+              <span class="tag steel">L1 · Staples only</span>
+              <span class="tag steel">L2 · +FMCG, 80% fill</span>
+              <span class="tag steel">L3 · +Fresh, margin+</span>
+              <span class="tag amber">L4 · Full assortment, 90% fill</span>
+            </div>
+          </div>
+          <div>
+            <div class="kpi-card steel" style="margin-bottom:12px;">
+              <span class="kpi-label">Steady-State ROCE Target</span>
+              <span class="kpi-value">40%</span>
+            </div>
+            <div class="kpi-card steel" style="margin-bottom:12px;">
+              <span class="kpi-label">Capex per New Store</span>
+              <span class="kpi-value">₹2.5cr</span>
+            </div>
+            <div class="kpi-card steel">
+              <span class="kpi-label">Working Capital Cycle</span>
+              <span class="kpi-value">12 days</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="block-title" style="margin-top:8px;">Mockup — Green Delivery Flow</h3>
+        <div class="mockup-wrap">
+          <div class="phone">
+            <div class="status-bar"><span>9:41</span><span>●●●●</span></div>
+            <div class="screen-label">Checkout</div>
+            <div style="padding:0 12px 14px;">
+              <div style="font-size:10.5px; font-weight:600; color:var(--ink); margin-bottom:8px;">Choose delivery speed</div>
+              <div style="border:1.5px solid var(--rule); border-radius:8px; padding:8px; margin-bottom:8px;">
+                <div style="display:flex; justify-content:space-between; font-size:9.5px; font-weight:600; color:var(--ink);"><span>⚡ Express</span><span>₹25</span></div>
+                <div style="font-size:8px; color:var(--text-faint); margin-top:2px;">Arrives in 10 min</div>
+              </div>
+              <div style="border:1.5px solid var(--teal); background:var(--teal-soft); border-radius:8px; padding:8px;">
+                <div style="display:flex; justify-content:space-between; font-size:9.5px; font-weight:600; color:var(--teal);"><span>🌱 Green</span><span>₹0</span></div>
+                <div style="font-size:8px; color:var(--teal); margin-top:2px;">Arrives in 30–45 min · Batched</div>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="status-bar"><span>9:42</span><span>●●●●</span></div>
+            <div class="screen-label">Order Tracking</div>
+            <div style="padding:0 12px 14px;">
+              <div style="font-size:10.5px; font-weight:600; color:var(--ink); margin-bottom:6px;">On its way — Green Delivery</div>
+              <div style="height:5px; background:var(--paper-dim); border-radius:3px; margin-bottom:6px;"><div style="width:60%; height:100%; background:var(--teal); border-radius:3px;"></div></div>
+              <div style="font-size:8.5px; color:var(--text-muted); margin-bottom:10px;">Batched with 3 nearby orders</div>
+              <div style="background:var(--paper-dim); border-radius:6px; padding:8px; font-size:8.5px; color:var(--text-muted);">Batching lowers last-mile cost per drop by design — that's how the ₹0 fee works.</div>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="status-bar"><span>10:14</span><span>●●●●</span></div>
+            <div class="screen-label">Delivered</div>
+            <div style="padding:0 12px 14px; text-align:center;">
+              <div style="font-size:24px; margin:10px 0 4px;">✓</div>
+              <div style="font-size:10.5px; font-weight:600; color:var(--ink); margin-bottom:10px;">Order delivered</div>
+              <div style="background:var(--teal-soft); border-radius:8px; padding:10px;">
+                <div style="font-family:var(--font-mono); font-size:16px; font-weight:700; color:var(--teal);">₹25 saved</div>
+                <div style="font-size:8px; color:var(--teal); margin-top:2px;">by choosing Green Delivery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2-even" style="margin-top:22px; align-items:center;">
+          <div>
+            <h3 class="block-title" style="font-size:16px;">Breakeven Order Threshold</h3>
+            <svg viewBox="0 0 420 190" style="width:100%; height:auto;" xmlns="http://www.w3.org/2000/svg">
+              <text x="105" y="55" text-anchor="end" font-family="var(--font-body)" font-size="12" fill="var(--text)">Metro</text>
+              <rect x="110" y="32" width="300" height="46" fill="var(--steel)"></rect>
+              <text x="420" y="60" text-anchor="end" font-family="var(--font-mono)" font-size="13" fill="var(--ink)" font-weight="600">1,300/day</text>
+
+              <text x="105" y="135" text-anchor="end" font-family="var(--font-body)" font-size="12" fill="var(--text)">Tier-2/3</text>
+              <rect x="110" y="112" width="184" height="46" fill="var(--teal)"></rect>
+              <text x="304" y="140" text-anchor="start" font-family="var(--font-mono)" font-size="13" fill="var(--ink)" font-weight="600">800/day</text>
+            </svg>
+          </div>
+          <div class="callout teal">
+            <span class="callout-label">Why this matters</span>
+            <p>A 38% lower breakeven bar is a real cost advantage — but only if Green Delivery's lower AOV doesn't erase it. The batching model has to hold in cities well below the density Blinkit's routing algorithms were originally tuned for.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Blinkit Strategic Roadmap — Confidential Draft</span>
+        <span>Prepared by Anubhav · Aug 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 06 — PILLAR 03: OPERATIONAL TRUST ============ -->
+  <section class="page" id="page-ops-trust">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow">05 · Pillar 03 — Operational Trust</span>
+        <span class="pillar-tag">Page 06 / 08</span>
+      </div>
+      <h2 class="page-title">The Infrastructure Behind the Promise</h2>
+      <p class="page-subtitle">Speed without reliability is a marketing claim. Operational trust — in forecasting, rider welfare, and proactive recovery — is what turns a 10-minute promise into a habit.</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <div class="grid-2">
+          <div class="col">
+            <p><strong>AI Demand Sensing.</strong> A dark store running 8,000+ SKUs across grocery, electronics, and beauty cannot forecast demand with static reorder points. The proposal is a <strong>store-level ML forecasting layer</strong> that ingests local weather, event calendars, neighborhood purchase cadence, and macro signals (IPL match days, festival weeks) to generate rolling 72-hour demand curves per SKU per store. The goal: cut stockout-driven cancellations by 30% within three quarters while simultaneously reducing excess inventory write-offs — the two failure modes that eat contribution margin from opposite sides.</p>
+            <p><strong>Rider Operations Intelligence.</strong> Blinkit's rider network is a <strong>gig workforce exceeding 200,000</strong> across 150+ cities. Rider churn directly impacts delivery speed: every new rider needs 2–3 weeks to hit peak routing efficiency. A <strong>Rider Welfare Dashboard</strong> — real-time fatigue scoring, heat-stress alerts, earnings-path transparency — isn't just an ESG initiative. It's a retention play: reducing churn by even 10% saves weeks of onboarding friction, keeps experienced riders on the road, and directly protects the SLA.</p>
+            <p><strong>Proactive Customer Recovery.</strong> Today, the support flow is reactive — a customer complains, then the system responds. A <strong>Proactive Support Engine</strong> monitors live signals: if a delivery is trending 5+ minutes late, if a substitution was made, or if a high-value item was flagged as damaged at the store — and triggers a resolution (credit, callback, or re-dispatch) <em>before</em> the customer contacts support. The target is a 40% reduction in inbound support tickets for delivery-related complaints.</p>
+          </div>
+          <div class="col">
+            <div class="callout steel">
+              <span class="callout-label">Why this pillar last — but not least</span>
+              <p>Pillars 1 and 2 generate revenue and reach. Pillar 3 protects the unit economics that make both sustainable. Without demand sensing, stores overstock. Without rider welfare, churn eats the SLA. Without proactive support, NPS erodes — and with it, repeat rates.</p>
+            </div>
+            <div class="kpi-card steel" style="margin-top:14px; margin-bottom:12px;">
+              <span class="kpi-label">Target Stockout Reduction</span>
+              <span class="kpi-value">−30%</span>
+              <span class="kpi-delta">via AI demand sensing, within 3 quarters</span>
+            </div>
+            <div class="kpi-card steel" style="margin-bottom:12px;">
+              <span class="kpi-label">Rider Churn Reduction Target</span>
+              <span class="kpi-value">−10%</span>
+              <span class="kpi-delta">via welfare dashboard + fatigue scoring</span>
+            </div>
+            <div class="kpi-card steel">
+              <span class="kpi-label">Inbound Support Ticket Reduction</span>
+              <span class="kpi-value">−40%</span>
+              <span class="kpi-delta">via proactive recovery engine</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="block-title" style="margin-top:14px;">Mockup — AI Proactive Support Engine</h3>
+        <div class="mockup-wrap">
+          <div class="phone">
+            <div class="status-bar"><span>11:03</span><span>●●●●</span></div>
+            <div class="screen-label">Live Alert</div>
+            <div style="padding:0 12px 14px;">
+              <div style="font-size:10.5px; font-weight:600; color:var(--ink); margin-bottom:6px;">⚠ Delay Detected</div>
+              <div style="background:var(--coral-soft); border-radius:8px; padding:10px; margin-bottom:8px;">
+                <div style="font-size:9px; font-family:var(--font-mono); color:var(--coral); font-weight:600; margin-bottom:4px;">ORDER #BK-7291</div>
+                <div style="font-size:8.5px; color:var(--ink); line-height:1.5;">Delivery running 7 min behind ETA. Rider rerouted due to road closure.</div>
+              </div>
+              <div style="background:var(--steel-soft); border-radius:8px; padding:10px;">
+                <div style="font-size:9px; font-family:var(--font-mono); color:var(--steel); font-weight:600; margin-bottom:4px;">AUTO-RESOLUTION</div>
+                <div style="font-size:8.5px; color:var(--ink); line-height:1.5;">₹15 credit applied · Push notification sent · Revised ETA: 11:14</div>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="status-bar"><span>11:03</span><span>●●●●</span></div>
+            <div class="screen-label">Customer View</div>
+            <div style="padding:0 12px 14px;">
+              <div style="font-size:10.5px; font-weight:600; color:var(--ink); margin-bottom:6px;">Your order update</div>
+              <div style="background:var(--paper-dim); border-radius:8px; padding:10px; margin-bottom:8px;">
+                <div style="font-size:8.5px; color:var(--text-muted); line-height:1.5;">We noticed a small delay on your order. Your revised ETA is <strong style="color:var(--ink);">11:14 AM</strong>.</div>
+              </div>
+              <div style="background:var(--teal-soft); border-radius:8px; padding:10px; text-align:center;">
+                <div style="font-family:var(--font-mono); font-size:14px; font-weight:700; color:var(--teal);">₹15 credit</div>
+                <div style="font-size:8px; color:var(--teal); margin-top:2px;">applied automatically — no action needed</div>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="status-bar"><span>11:04</span><span>●●●●</span></div>
+            <div class="screen-label">Ops Dashboard</div>
+            <div style="padding:0 12px 14px;">
+              <div style="font-size:10.5px; font-weight:600; color:var(--ink); margin-bottom:8px;">Recovery Log</div>
+              <div style="font-size:8px; line-height:1.8; color:var(--text-muted);">
+                <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--rule); padding:3px 0;"><span>Delay alerts fired</span><span style="font-weight:600; color:var(--ink);">47</span></div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--rule); padding:3px 0;"><span>Auto-resolved</span><span style="font-weight:600; color:var(--teal);">41</span></div>
+                <div style="display:flex; justify-content:space-between; border-bottom:1px solid var(--rule); padding:3px 0;"><span>Escalated to agent</span><span style="font-weight:600; color:var(--coral);">6</span></div>
+                <div style="display:flex; justify-content:space-between; padding:3px 0;"><span>Tickets prevented</span><span style="font-weight:600; color:var(--teal);">~38</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="block-title" style="margin-top:22px;">Mockup — Kirana Hybrid Partner Onboarding</h3>
+        <div class="mockup-wrap">
+          <div class="browser" style="max-width:620px;">
+            <div class="browser-bar">
+              <span class="dot" style="background:#E5605A;"></span><span class="dot" style="background:#E8B13A;"></span><span class="dot" style="background:#5CB85C;"></span>
+              <div class="browser-url">partners.blinkit.com/kirana/onboard</div>
+            </div>
+            <div style="padding:18px 22px 22px;">
+              <div style="font-family:var(--font-mono); font-size:9px; letter-spacing:0.08em; color:var(--teal); font-weight:600; margin-bottom:4px;">KIRANA HYBRID NETWORK · PARTNER PORTAL</div>
+              <div style="font-family:var(--font-display); font-size:18px; font-weight:600; color:var(--ink); margin-bottom:14px;">Store Onboarding — Rajesh General Store, Indore</div>
+              <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:16px;">
+                <div style="border:1px solid var(--teal); border-radius:6px; padding:10px; background:var(--teal-soft);">
+                  <div style="font-size:9.5px; font-family:var(--font-mono); color:var(--teal); text-transform:uppercase; margin-bottom:6px;">Step 1 · Complete</div>
+                  <div style="font-size:12px; font-weight:600; color:var(--ink);">KYC Verified</div>
+                  <div style="font-size:8.5px; color:var(--teal); margin-top:4px;">✓ FSSAI · ✓ GST · ✓ PAN</div>
+                </div>
+                <div style="border:1px solid var(--amber); border-radius:6px; padding:10px; background:var(--amber-soft);">
+                  <div style="font-size:9.5px; font-family:var(--font-mono); color:var(--amber-deep); text-transform:uppercase; margin-bottom:6px;">Step 2 · In Progress</div>
+                  <div style="font-size:12px; font-weight:600; color:var(--ink);">Catalog Sync</div>
+                  <div style="height:5px; background:#fff; border-radius:3px; margin-top:6px;"><div style="width:65%; height:100%; background:var(--amber); border-radius:3px;"></div></div>
+                </div>
+                <div style="border:1px solid var(--rule); border-radius:6px; padding:10px;">
+                  <div style="font-size:9.5px; font-family:var(--font-mono); color:var(--text-faint); text-transform:uppercase; margin-bottom:6px;">Step 3 · Pending</div>
+                  <div style="font-size:12px; font-weight:600; color:var(--ink);">Go Live</div>
+                  <div style="font-size:8.5px; color:var(--text-faint); margin-top:4px;">Waiting for catalog approval</div>
+                </div>
+              </div>
+              <div style="display:flex; justify-content:space-between; align-items:center; padding-top:14px; border-top:1px solid var(--rule);">
+                <span style="font-family:var(--font-mono); font-size:10px; color:var(--text-muted); text-transform:uppercase;">Est. time to live</span>
+                <span style="font-family:var(--font-display); font-size:20px; font-weight:700; color:var(--teal);">48 hrs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Blinkit Strategic Roadmap — Confidential Draft</span>
+        <span>Prepared by Anubhav · Aug 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 07 — PRIORITIZATION & EXECUTION ============ -->
+  <section class="page" id="page-prioritization">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow">06 · Prioritization & Execution</span>
+        <span class="pillar-tag">Page 07 / 08</span>
+      </div>
+      <h2 class="page-title">What Gets Built — And in What Order</h2>
+      <p class="page-subtitle">RICE scoring, impact-vs-effort mapping, and a quarterly roadmap that sequences the nine initiatives across four quarters from Q3 FY27 through Q2 FY28.</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <h3 class="block-title">RICE Prioritization Matrix</h3>
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th>Initiative</th>
+              <th>Pillar</th>
+              <th class="num">Reach</th>
+              <th class="num">Impact</th>
+              <th class="num">Confidence</th>
+              <th class="num">Effort</th>
+              <th class="num">RICE Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Predictive Bidding Engine</strong></td>
+              <td><span class="tag amber">P1</span></td>
+              <td class="num">9</td>
+              <td class="num">3</td>
+              <td class="num">85%</td>
+              <td class="num">2</td>
+              <td class="num"><strong>11.5</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Brand Fidelity Placement</strong></td>
+              <td><span class="tag amber">P1</span></td>
+              <td class="num">7</td>
+              <td class="num">3</td>
+              <td class="num">80%</td>
+              <td class="num">1.5</td>
+              <td class="num"><strong>11.2</strong></td>
+            </tr>
+            <tr>
+              <td><strong>AI Demand Sensing</strong></td>
+              <td><span class="tag steel">P3</span></td>
+              <td class="num">10</td>
+              <td class="num">3</td>
+              <td class="num">75%</td>
+              <td class="num">3</td>
+              <td class="num"><strong>7.5</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Green Delivery Tier</strong></td>
+              <td><span class="tag teal">P2</span></td>
+              <td class="num">8</td>
+              <td class="num">2</td>
+              <td class="num">80%</td>
+              <td class="num">2</td>
+              <td class="num"><strong>6.4</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Proactive Support Engine</strong></td>
+              <td><span class="tag steel">P3</span></td>
+              <td class="num">10</td>
+              <td class="num">2</td>
+              <td class="num">70%</td>
+              <td class="num">2.5</td>
+              <td class="num"><strong>5.6</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Bundle Bidding</strong></td>
+              <td><span class="tag amber">P1</span></td>
+              <td class="num">6</td>
+              <td class="num">3</td>
+              <td class="num">70%</td>
+              <td class="num">2.5</td>
+              <td class="num"><strong>5.0</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Level-System SKU Gating</strong></td>
+              <td><span class="tag teal">P2</span></td>
+              <td class="num">8</td>
+              <td class="num">2</td>
+              <td class="num">85%</td>
+              <td class="num">3</td>
+              <td class="num"><strong>4.5</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Rider Welfare Dashboard</strong></td>
+              <td><span class="tag steel">P3</span></td>
+              <td class="num">10</td>
+              <td class="num">1</td>
+              <td class="num">90%</td>
+              <td class="num">2</td>
+              <td class="num"><strong>4.5</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Kirana Hybrid Network</strong></td>
+              <td><span class="tag teal">P2</span></td>
+              <td class="num">5</td>
+              <td class="num">2</td>
+              <td class="num">60%</td>
+              <td class="num">3</td>
+              <td class="num"><strong>2.0</strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small muted" style="margin-top:6px;">RICE = (Reach × Impact × Confidence) / Effort. Reach scored 1–10 on user base affected; Impact scored 1–3 (marginal / significant / transformative); Confidence as %; Effort in engineering-quarters.</p>
+
+        <h3 class="block-title" style="margin-top:24px;">Impact vs. Effort — Visual Prioritization</h3>
+        <svg viewBox="0 0 700 380" style="width:100%; height:auto; margin:4px 0 8px;" xmlns="http://www.w3.org/2000/svg">
+          <!-- axes -->
+          <line x1="80" y1="340" x2="670" y2="340" stroke="var(--ink)" stroke-width="1.5"></line>
+          <line x1="80" y1="40" x2="80" y2="340" stroke="var(--ink)" stroke-width="1.5"></line>
+          <!-- axis labels -->
+          <text x="375" y="375" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--text-muted)" letter-spacing="0.8">EFFORT (Engineering-Quarters) →</text>
+          <text x="25" y="190" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="var(--text-muted)" letter-spacing="0.8" transform="rotate(-90 25 190)">IMPACT (Revenue + Strategic) →</text>
+
+          <!-- quadrant lines -->
+          <line x1="375" y1="40" x2="375" y2="340" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+          <line x1="80" y1="190" x2="670" y2="190" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+
+          <!-- quadrant labels -->
+          <text x="227" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="9" fill="var(--teal)" letter-spacing="0.5" font-weight="600">QUICK WINS</text>
+          <text x="522" y="62" text-anchor="middle" font-family="var(--font-mono)" font-size="9" fill="var(--amber-deep)" letter-spacing="0.5" font-weight="600">BIG BETS</text>
+          <text x="227" y="330" text-anchor="middle" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" letter-spacing="0.5">FILL-INS</text>
+          <text x="522" y="330" text-anchor="middle" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" letter-spacing="0.5">MONEY PITS</text>
+
+          <!-- Predictive Bidding -->
+          <circle cx="200" cy="80" r="22" fill="var(--amber)" opacity="0.85"></circle>
+          <text x="200" y="76" text-anchor="middle" font-family="var(--font-body)" font-size="8" fill="var(--ink)" font-weight="600">Predictive</text>
+          <text x="200" y="86" text-anchor="middle" font-family="var(--font-body)" font-size="8" fill="var(--ink)" font-weight="600">Bidding</text>
+
+          <!-- Brand Fidelity -->
+          <circle cx="150" cy="110" r="20" fill="var(--amber)" opacity="0.75"></circle>
+          <text x="150" y="106" text-anchor="middle" font-family="var(--font-body)" font-size="7.5" fill="var(--ink)" font-weight="600">Brand</text>
+          <text x="150" y="116" text-anchor="middle" font-family="var(--font-body)" font-size="7.5" fill="var(--ink)" font-weight="600">Fidelity</text>
+
+          <!-- AI Demand Sensing -->
+          <circle cx="450" cy="100" r="24" fill="var(--steel)" opacity="0.8"></circle>
+          <text x="450" y="96" text-anchor="middle" font-family="var(--font-body)" font-size="7.5" fill="#fff" font-weight="600">AI Demand</text>
+          <text x="450" y="106" text-anchor="middle" font-family="var(--font-body)" font-size="7.5" fill="#fff" font-weight="600">Sensing</text>
+
+          <!-- Green Delivery -->
+          <circle cx="300" cy="140" r="21" fill="var(--teal)" opacity="0.8"></circle>
+          <text x="300" y="136" text-anchor="middle" font-family="var(--font-body)" font-size="7.5" fill="#fff" font-weight="600">Green</text>
+          <text x="300" y="146" text-anchor="middle" font-family="var(--font-body)" font-size="7.5" fill="#fff" font-weight="600">Delivery</text>
+
+          <!-- Proactive Support -->
+          <circle cx="340" cy="170" r="19" fill="var(--steel)" opacity="0.7"></circle>
+          <text x="340" y="166" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Proactive</text>
+          <text x="340" y="176" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Support</text>
+
+          <!-- Bundle Bidding -->
+          <circle cx="380" cy="120" r="18" fill="var(--amber)" opacity="0.7"></circle>
+          <text x="380" y="116" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="var(--ink)" font-weight="600">Bundle</text>
+          <text x="380" y="126" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="var(--ink)" font-weight="600">Bidding</text>
+
+          <!-- Level-System Gating -->
+          <circle cx="470" cy="210" r="17" fill="var(--teal)" opacity="0.65"></circle>
+          <text x="470" y="206" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Level-Sys</text>
+          <text x="470" y="216" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Gating</text>
+
+          <!-- Rider Welfare -->
+          <circle cx="260" cy="230" r="17" fill="var(--steel)" opacity="0.65"></circle>
+          <text x="260" y="226" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Rider</text>
+          <text x="260" y="236" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Welfare</text>
+
+          <!-- Kirana Hybrid -->
+          <circle cx="560" cy="250" r="16" fill="var(--teal)" opacity="0.55"></circle>
+          <text x="560" y="246" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Kirana</text>
+          <text x="560" y="256" text-anchor="middle" font-family="var(--font-body)" font-size="7" fill="#fff" font-weight="600">Hybrid</text>
+        </svg>
+        <p class="small muted" style="text-align:center; margin-top:0;">Bubble size ≈ RICE score. Bubble color matches pillar: amber = Monetization, teal = Structural Reach, steel = Operational Trust.</p>
+
+        <h3 class="block-title" style="margin-top:24px;">Quarterly Execution Roadmap — Q3 FY27 → Q2 FY28</h3>
+        <svg viewBox="0 0 780 310" style="width:100%; height:auto; margin:4px 0 8px;" xmlns="http://www.w3.org/2000/svg">
+          <!-- quarter headers -->
+          <rect x="160" y="10" width="148" height="28" rx="2" fill="var(--ink)"></rect>
+          <text x="234" y="29" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="#fff" font-weight="600" letter-spacing="0.5">Q3 FY27</text>
+          <rect x="318" y="10" width="148" height="28" rx="2" fill="var(--ink)"></rect>
+          <text x="392" y="29" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="#fff" font-weight="600" letter-spacing="0.5">Q4 FY27</text>
+          <rect x="476" y="10" width="148" height="28" rx="2" fill="var(--ink)"></rect>
+          <text x="550" y="29" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="#fff" font-weight="600" letter-spacing="0.5">Q1 FY28</text>
+          <rect x="634" y="10" width="148" height="28" rx="2" fill="var(--ink)"></rect>
+          <text x="708" y="29" text-anchor="middle" font-family="var(--font-mono)" font-size="10" fill="#fff" font-weight="600" letter-spacing="0.5">Q2 FY28</text>
+
+          <!-- grid lines -->
+          <line x1="160" y1="46" x2="160" y2="290" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+          <line x1="318" y1="46" x2="318" y2="290" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+          <line x1="476" y1="46" x2="476" y2="290" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+          <line x1="634" y1="46" x2="634" y2="290" stroke="var(--rule)" stroke-dasharray="2,4"></line>
+
+          <!-- Row labels -->
+          <text x="10" y="75" font-family="var(--font-mono)" font-size="9" fill="var(--amber-deep)" font-weight="600" letter-spacing="0.5">P1 · MONETIZE</text>
+          <text x="10" y="140" font-family="var(--font-mono)" font-size="9" fill="var(--teal)" font-weight="600" letter-spacing="0.5">P2 · REACH</text>
+          <text x="10" y="210" font-family="var(--font-mono)" font-size="9" fill="var(--steel)" font-weight="600" letter-spacing="0.5">P3 · TRUST</text>
+          <text x="10" y="275" font-family="var(--font-mono)" font-size="9" fill="var(--text-faint)" font-weight="600" letter-spacing="0.5">MILESTONES</text>
+
+          <!-- horizontal separators -->
+          <line x1="0" y1="105" x2="782" y2="105" stroke="var(--rule)" opacity="0.5"></line>
+          <line x1="0" y1="170" x2="782" y2="170" stroke="var(--rule)" opacity="0.5"></line>
+          <line x1="0" y1="240" x2="782" y2="240" stroke="var(--rule)" opacity="0.5"></line>
+
+          <!-- P1 bars -->
+          <rect x="165" y="58" width="230" height="16" rx="3" fill="var(--amber)" opacity="0.85"></rect>
+          <text x="175" y="70" font-family="var(--font-body)" font-size="8" fill="var(--ink)" font-weight="600">Predictive Bidding Engine</text>
+          <rect x="240" y="80" width="200" height="16" rx="3" fill="var(--amber)" opacity="0.7"></rect>
+          <text x="250" y="92" font-family="var(--font-body)" font-size="8" fill="var(--ink)" font-weight="600">Brand Fidelity Placement</text>
+          <rect x="400" y="58" width="260" height="16" rx="3" fill="var(--amber)" opacity="0.6"></rect>
+          <text x="410" y="70" font-family="var(--font-body)" font-size="8" fill="var(--ink)" font-weight="600">Bundle Bidding</text>
+
+          <!-- P2 bars -->
+          <rect x="165" y="122" width="260" height="16" rx="3" fill="var(--teal)" opacity="0.8"></rect>
+          <text x="175" y="134" font-family="var(--font-body)" font-size="8" fill="#fff" font-weight="600">Green Delivery Tier</text>
+          <rect x="320" y="144" width="350" height="16" rx="3" fill="var(--teal)" opacity="0.6"></rect>
+          <text x="330" y="156" font-family="var(--font-body)" font-size="8" fill="#fff" font-weight="600">Level-System SKU Gating · Kirana Hybrid Network</text>
+
+          <!-- P3 bars -->
+          <rect x="165" y="186" width="300" height="16" rx="3" fill="var(--steel)" opacity="0.8"></rect>
+          <text x="175" y="198" font-family="var(--font-body)" font-size="8" fill="#fff" font-weight="600">AI Demand Sensing</text>
+          <rect x="240" y="208" width="200" height="16" rx="3" fill="var(--steel)" opacity="0.65"></rect>
+          <text x="250" y="220" font-family="var(--font-body)" font-size="8" fill="#fff" font-weight="600">Rider Welfare Dashboard</text>
+          <rect x="480" y="186" width="230" height="16" rx="3" fill="var(--steel)" opacity="0.6"></rect>
+          <text x="490" y="198" font-family="var(--font-body)" font-size="8" fill="#fff" font-weight="600">Proactive Support Engine</text>
+
+          <!-- Milestone diamonds -->
+          <polygon points="318,268 326,275 318,282 310,275" fill="var(--amber)"></polygon>
+          <text x="318" y="298" text-anchor="middle" font-family="var(--font-mono)" font-size="8" fill="var(--text-muted)">Bidding v1 Live</text>
+          <polygon points="476,268 484,275 476,282 468,275" fill="var(--teal)"></polygon>
+          <text x="476" y="298" text-anchor="middle" font-family="var(--font-mono)" font-size="8" fill="var(--text-muted)">Green Tier Launch</text>
+          <polygon points="710,268 718,275 710,282 702,275" fill="var(--ink)"></polygon>
+          <text x="710" y="298" text-anchor="middle" font-family="var(--font-mono)" font-size="8" fill="var(--text-muted)">Full Stack Live</text>
+        </svg>
+
+        <h3 class="block-title" style="margin-top:20px;">Success Metrics & KPIs</h3>
+        <div class="grid-4">
+          <div class="kpi-card">
+            <span class="kpi-label">Ad Revenue / NOV</span>
+            <span class="kpi-value">4.5%</span>
+            <span class="kpi-delta">from ~3.2% today</span>
+          </div>
+          <div class="kpi-card teal">
+            <span class="kpi-label">Tier-2/3 Stores at L3+</span>
+            <span class="kpi-value">60%</span>
+            <span class="kpi-delta">by Q2 FY28</span>
+          </div>
+          <div class="kpi-card steel">
+            <span class="kpi-label">Stockout-Driven Cancellations</span>
+            <span class="kpi-value">−30%</span>
+            <span class="kpi-delta">vs. Q2 FY27 baseline</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-label">NPS Score</span>
+            <span class="kpi-value">72+</span>
+            <span class="kpi-delta">from ~65 today</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-footer">
+        <span>Blinkit Strategic Roadmap — Confidential Draft</span>
+        <span>Prepared by Anubhav · Aug 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAGE 08 — CONCLUSION ============ -->
+  <section class="page" id="page-conclusion">
+    <div class="page-frame">
+      <div class="page-kicker">
+        <span class="eyebrow">07 · Conclusion</span>
+        <span class="pillar-tag">Page 08 / 08</span>
+      </div>
+      <h2 class="page-title">Why Blinkit Wins — And What It Takes to Keep Winning</h2>
+      <p class="page-subtitle">Three pillars, nine initiatives, one thesis: the company that controls the full loop — demand forecasting, inventory, last-mile, and post-purchase trust — owns the category.</p>
+      <div class="rule-amber"></div>
+
+      <div class="page-body">
+        <div class="grid-2">
+          <div class="col">
+            <span class="eyebrow-mini">Executive Summary</span>
+            <p class="lede">Blinkit enters FY27 as India's largest quick-commerce platform by every meaningful metric — market share, dark-store count, and adjusted-EBITDA trajectory. But leadership in a category growing 60–80% annually is perishable. The playbook that delivered dominance — sprint-speed expansion, deep metro density, and a 10-minute brand promise — is now table stakes. Every competitor has the same playbook.</p>
+            <p>This roadmap argues that <strong>the next phase of competitive advantage comes from three places</strong>: extracting durable margin from ad-tech without degrading the shopper experience (Pillar 1), making Tier-2/3 expansion self-funding through adapted product and operating models (Pillar 2), and hardening the operational substrate — demand sensing, rider welfare, proactive recovery — that makes the speed promise credible at 3,000+ stores (Pillar 3).</p>
+            <p>Together, these nine initiatives don't just grow revenue — they change the cost structure. Predictive Bidding and Brand Fidelity turn existing traffic into high-margin ad revenue at near-zero incremental cost. Green Delivery drops last-mile expense per order in cities where speed isn't the decision factor. AI Demand Sensing attacks the hidden margin killer — stockout-driven cancellations that cost both the sale and the customer's trust in selection reliability.</p>
+          </div>
+          <div class="col">
+            <span class="eyebrow-mini">Strategic Recommendations</span>
+            <ul class="clean">
+              <li><strong>Ship Predictive Bidding in Q3 FY27</strong> — highest RICE score, zero capex, immediate contribution-margin lift. Every quarter of delay is ad revenue left on the table.</li>
+              <li><strong>Pilot Green Delivery in 5 Tier-2 cities</strong> before scaling — validate that batched, 30-minute delivery actually converts deal-first shoppers, and that batching holds below metro density.</li>
+              <li><strong>Build Demand Sensing on the existing data stack</strong> — this is an ML model, not a new platform. Start with the top 200 SKUs per store and expand by level.</li>
+              <li><strong>Launch the Rider Welfare Dashboard alongside</strong> Green Delivery — the same cities rolling out a new delivery tier need the strongest rider retention.</li>
+              <li><strong>Gate every Tier-2/3 store with the Level System</strong> — no store gets L3+ inventory without proving it can maintain a 90% fill rate and positive CM at L2.</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 class="block-title" style="margin-top:20px;">Risk Register</h3>
+        <table class="report-table">
+          <thead>
+            <tr>
+              <th>Risk</th>
+              <th>Severity</th>
+              <th>Likelihood</th>
+              <th>Mitigation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ad load degrades UX</strong> — higher CPMs drive placement bloat</td>
+              <td><span class="tag coral">High</span></td>
+              <td><span class="tag amber">Medium</span></td>
+              <td>Hard-cap ad density per session; A/B test every placement change against conversion rate, not just revenue.</td>
+            </tr>
+            <tr>
+              <td><strong>Tier-2/3 AOV stays below breakeven</strong> — Green Delivery attracts orders but not margin</td>
+              <td><span class="tag coral">High</span></td>
+              <td><span class="tag amber">Medium</span></td>
+              <td>Minimum-basket threshold for Green tier; auto-pause Green in stores below CM target for 4 consecutive weeks.</td>
+            </tr>
+            <tr>
+              <td><strong>Rider welfare regulation tightens</strong> — gig-worker legislation in key states</td>
+              <td><span class="tag amber">Medium</span></td>
+              <td><span class="tag amber">Medium</span></td>
+              <td>Proactive compliance via the Rider Welfare Dashboard — if Blinkit sets the standard, regulation follows Blinkit's model.</td>
+            </tr>
+            <tr>
+              <td><strong>Demand Sensing model underperforms</strong> — cold-start problem in new stores</td>
+              <td><span class="tag amber">Medium</span></td>
+              <td><span class="tag teal">Low</span></td>
+              <td>Start with top 200 SKUs per store; fall back to rule-based reorder for long-tail. Expand model coverage only after validation.</td>
+            </tr>
+            <tr>
+              <td><strong>Kirana partners churn</strong> — hybrid model creates channel conflict</td>
+              <td><span class="tag amber">Medium</span></td>
+              <td><span class="tag teal">Low</span></td>
+              <td>Revenue-share guarantee for first 6 months; dedicated relationship manager per 50 partners.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="callout amber" style="margin-top:22px;">
+          <span class="callout-label">The Thesis, Restated</span>
+          <p>The 10-minute promise got Blinkit to leadership. Defending that position requires a fundamentally different capability set: monetization precision that scales revenue without scaling costs, a reach model that adapts to India beyond the metros, and an operational trust layer that makes reliability — not just speed — the brand promise customers remember. The company that masters all three doesn't just lead the category. It <em>becomes</em> the category.</p>
+        </div>
+      </div>
+
+      <!-- closing block — matches cover style -->
+      <div style="background:var(--ink); margin:0 -58px -40px; padding:38px 58px 36px; border-radius:0 0 3px 3px; position:relative; overflow:hidden;">
+        <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(232,150,12,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(232,150,12,0.06) 1px, transparent 1px); background-size:38px 38px; -webkit-mask-image:linear-gradient(to bottom, transparent, black 20%, black 80%, transparent); mask-image:linear-gradient(to bottom, transparent, black 20%, black 80%, transparent); pointer-events:none;"></div>
+        <div style="position:relative; z-index:1;">
+          <div style="font-family:var(--font-mono); font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--amber); margin-bottom:14px; font-weight:600;">● End of Document</div>
+          <div style="font-family:var(--font-display); font-size:28px; font-weight:600; color:#fff; line-height:1.2; max-width:600px; margin-bottom:12px;">From India's fastest delivery app to its default commerce operating system.</div>
+          <div style="font-family:var(--font-body); font-size:13px; color:#9AA0AE; line-height:1.6; max-width:500px; margin-bottom:20px;">This roadmap was prepared as a strategic product exercise. All figures reference publicly disclosed data or clearly labeled illustrative estimates.</div>
+          <div style="display:flex; justify-content:space-between; align-items:flex-end; border-top:1px solid var(--rule-dark); padding-top:18px;">
+            <div style="font-family:var(--font-mono); font-size:11px; color:#9AA0AE; line-height:1.8;">
+              <div>Prepared by <span style="color:#fff; font-weight:600;">Anubhav</span> — Product Manager Candidate</div>
+              <div>August 2026 · Confidential Draft</div>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:10px; color:#9AA0AE; text-align:right; line-height:1.8;">
+              <div>8 pages · 3 pillars · 9 initiatives</div>
+              <div style="color:var(--amber); font-weight:600;">blinkit strategic roadmap</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
