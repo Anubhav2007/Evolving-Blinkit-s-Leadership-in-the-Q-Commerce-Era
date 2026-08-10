@@ -1,5 +1,7 @@
 # Evolving Blinkit's Leadership in the Q-Commerce Era
 
+https://anubhav2007.github.io/Evolving-Blinkit-s-Leadership-in-the-Q-Commerce-Era/
+
 **Strategic Product & Business Roadmap · FY27–FY28**
 
 > From India's fastest delivery app to its default commerce operating system — a product-led plan for monetization precision, structural Tier-2/3 reach, and operational trust.
