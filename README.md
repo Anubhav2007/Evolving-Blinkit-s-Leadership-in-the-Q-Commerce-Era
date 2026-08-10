@@ -16,20 +16,6 @@ This repository contains a strategic product & business roadmap for Blinkit. The
 - **Target Audience:** Blinkit (Eternal Ltd.) Leadership & Hiring Committee
 - **Format:** Single self-contained HTML (built-in CSS/SVG, print-ready to PDF)
 
----
-
-## 🚀 How to View the HTML Report
-
-1. **Open in Browser:** Simply double-click [HTML.html](HTML.html) or [index.html](index.html) to open it in Chrome, Edge, or Safari.
-2. **Export to PDF:**
-    - Open the HTML file in Chrome.
-    - Press `Ctrl + P` (or `Cmd + P` on Mac).
-    - Set **Destination** to **Save as PDF**.
-    - Set **Margins** to **None**.
-    - Ensure **Background graphics** is checked (this forces the deck colors/backgrounds to render).
-    - Save.
-
----
 
 ## 🏗️ Strategy Architecture
 
